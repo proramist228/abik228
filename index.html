@@ -1,71 +1,84 @@
-<html>
-	<head>
-               
-		<title>
-       			My first web site
-        </title>
-    </head>
-        
-	    		
-          <center>
-        
-        <h1>
-            Мен туралы ақпартым
-        </h1>
-        
-        <p>
-           Атым:Әбілмансұр
-           <p>
-           Тегім:Тәңірберген
-           </p>
-           	   <p>
-               Туған күнім:08/10/2008
-        </title>
-    </head>
-        
-        
-	  </body>
-          <center>
-        
-        <h1>
-            Мен туралы ақпартым
-        </h1>
-        
-        <p>
-           Атым:Әбілмансұр
-           <p>
-           Тегім:Тәңірберген
-           </p>
-           	   <p>
-               Туған күнім:08/10/2008
-          	   </p>
-                   <p>
-                     Зодиак:скорпион
-          	       </p>
-                       <p>
-                       Хобби:кітап оқу,комьютерлік ойндарды достарымен бірге ойнау,үй жинау
-          	           </p>
-                       		         
-          	               
-        </p>
-        <img src="https://vertex-art.ru/wp-content/uploads/2016/10/portretvizo_.jpg">
-        <a href="https://www.instagram.com/hssh7585?igsh=MXZhbzI2cDhvc3JqMA=="<p>                 Менің инстагарам парақшам</a href><br>Mенің телофонымның номеры: +7 778 004 6022</br><br>Mенің почтам: abilmansurtanirbergen@gmail.com</br</p>
-        <form action="submit_feedback.php" method="post">
-                <label for="name">Аты-жөні:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-                
-                <label for="email">email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                
-                <label for="feedback">кері байланыс:</label><br><br>
-                <input type="text" id="кері байланы" name="кері байланы"><br><br>
-    <br><br>
-                
-                <input type="submit" value="Отправить">
-              
-			
-		</style>
-        
-         </center>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FindU — Вход</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-black text-white font-sans">
 
-    </body>
+  <!-- Header -->
+  <header class="bg-black py-4 px-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold tracking-tight">FindU</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Календарь</a>
+        <a href="#">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-50 text-black text-center py-16">
+    <h2 class="text-4xl font-extrabold mb-2">Invest in your Future</h2>
+    <p class="text-lg">Делаем локальные инициативы Казахстана видимыми</p>
+  </section>
+
+  <!-- Filters -->
+  <section class="bg-black py-6 px-4">
+    <div class="max-w-5xl mx-auto flex flex-wrap gap-4 justify-center">
+      <button class="bg-[#DAD1BD] text-black px-4 py-2 rounded-full text-sm font-semibold">Календарь</button>
+      <button class="bg-[#DAD1BD] text-black px-4 py-2 rounded-full text-sm font-semibold">Локация</button>
+      <button class="bg-[#DAD1BD] text-black px-4 py-2 rounded-full text-sm font-semibold">Формат</button>
+    </div>
+  </section>
+
+  <!-- Popular Events -->
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-xl font-bold mb-6">Most Popular</h2>
+    <div class="space-y-4">
+      <div class="bg-[#5E6886] rounded-xl p-4 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 bg-white rounded-full"></div>
+          <span class="text-sm">Название мероприятия</span>
+        </div>
+        <a href="#" class="text-white text-xs underline hover:text-gray-300">Подробнее</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login -->
+  <section class="p-6 flex items-center justify-center">
+    <div class="max-w-md w-full space-y-6 bg-[#5E6886] p-6 rounded-xl">
+      <h1 class="text-2xl font-bold text-center">Вход</h1>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" class="w-full p-2 rounded bg-gray-900 text-white" />
+        <input type="password" placeholder="Пароль" class="w-full p-2 rounded bg-gray-900 text-white" />
+        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 py-2 rounded font-semibold">Войти</button>
+      </form>
+      <p class="text-center text-sm text-gray-300">Нет аккаунта? <a href="#" class="underline">Зарегистрироваться</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#5E6886] mt-10 py-10 px-6 rounded-t-3xl text-sm">
+    <div class="max-w-4xl mx-auto space-y-2">
+      <p>Follow FindU in telegram</p>
+      <p>Главная</p>
+      <p>Фильтры</p>
+      <p>Календарь мероприятий</p>
+      <p>О нас</p>
+      <p>Личный кабинет</p>
+      <div class="space-y-2">
+        <button class="w-full bg-black text-white py-2 rounded-full">Войти</button>
+        <button class="w-full bg-black text-white py-2 rounded-full">Зарегистрироваться</button>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
